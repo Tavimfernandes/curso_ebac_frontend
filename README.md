@@ -5,3 +5,4 @@ Branches:
 
   Exercicio_git: Para a atividade do módulo 02 - GIT
   Exercicio_html: Para a atividade do módulo 03 - HTML
+  Exercicio_css: Para a atividade do módulo 04 - CSS
