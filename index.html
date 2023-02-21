@@ -2,54 +2,33 @@
 <html lang="pt-BR">
 
 <head>
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade MOD 10</title>
+    <title>Exercicio Bootstrap</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+
 </head>
 
 <body>
     <div class="container">
-        <h2>Cadastre-se</h2>
-        <form>
-            <div class="form-campo">
-                <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" name="nome" />
-            </div>
-            <div class="form-campo">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" />
-            </div>
-            <div class="form-campo">
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" />
-            </div>
-            <div class="form-campo">
-                <label for="cpf">CPF:</label>
-                <input type="num" id="cpf" name="cpf" />
-            </div>
-            <div class="form-campo">
-                <label for="endereco">Endereço:</label>
-                <input type="tel" id="endereco" name="endereco" />
-            </div>
-            <div class="form-campo">
-                <label for="cep">CEP:</label>
-                <input type="num" id="cep" name="cep" />
-            </div>
-
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="row">
+            <h2>Cadastre-se</h2>
+            <form>
+                <label class="form-label" for="nome">Seu nome:</label>
+                <input class="form-control" type="text" id="nome" />
+                <label class="form-label" for="email">Seu email:</label>
+                <input class="form-control" type="text" id="email" />
+                <label class="form-label" for="telefone">Seu telefone:</label>
+                <input class="form-control" type="number" id="telefone" />
+                <button class="btn btn-primary my-2">Enviar</button>
+            </form>
+        </div>
     </div>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="./js/jquery.mask.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
