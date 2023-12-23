@@ -1,226 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio Bootstrap Avançado</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-
-    <style>
-        .navbar-nav .navbar-link.active {
-            color: #fff;
-        }
-
-        .nav-link {
-            text-align: center;
-        }
-
-        section {
-            height: 100vh;
-            background-color: rgb(240, 240, 240);
-            padding-top: 50px;
-        }
-
-        header {
-            position: sticky;
-            top: 0;
-            left: 0;
-            background-color: #fff;
-            z-index: 1;
-        }
-
-        #carrossel {
-            position: relative;
-        }
-
-        header.card-header, #carrossel {
-            z-index: 0;
-        }
-    </style>
-
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/styles.css">
 </head>
-
 <body>
-    <header id="#cabecalho">
-        <div class="navbar navbar-expand-lg">
-            <div class="container">
-                <h1>Bootstrap Avançado</h1>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <nav class="collapse navbar-collapse justify-content-end" id="menu">
-                    <ul class="nav navbar-nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#carrossel">Carrossel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#grid">Grid</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#card">Card</a>
-                        </li>
-                    </ul>
-                </nav>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="https://via.placeholder.com/120x70" />
             </div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Produtos</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
-    
-    <div data-bs-spy="scroll" data-bs-target="#cabecalho" class="containter">
-        <section id="carrossel" style="height: 100%;">
-            <div class="container w-50">
-                <h2>Carrossel</h2>
-                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div data-bs-interval="3000" class="carousel-item active">
-                            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/06/27/10/51/man-8091933_1280.jpg" alt="">
-                            <div class="carousel-caption">
-                                <h2>Legenda foto</h2>
-                            </div>
-                        </div>
-                        <div data-bs-interval="3000"class="carousel-item">
-                            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/05/12/19/59/maidens-tower-7989254_1280.jpg" alt="">
-                            <div class="carousel-caption">
-                                <h2>Legenda foto</h2>
-                            </div>
-                        </div>
-                        <div data-bs-interval="3000"class="carousel-item">
-                            <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2023/07/04/19/13/stuart-bailey-8106891_1280.jpg" alt="">
-                            <div class="carousel-caption">
-                                <h2>Legenda foto</h2>
-                            </div>
-                        </div>
-                        <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0">0</button>
-                            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1">1</button>
-                            <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2">2</button>
-                        </div>
-                    </div>
-            
-                </div>
-            </div>
-        </section>
-    
-        <section id="grid" style="height: 100%;">
-            
-            <div class="container">
-                <h2>Grid</h2>
-                <div class="row">
-                    <div class="col-md-8">
-                        <h3>Últimas notícias</h3>
-                        <div class="container g-0">
-                            <div class="row">
-                                <div class="col-lg-4 col-sm-6 post mb-1 ">
-                                    <img src="https://via.placeholder.com/180x180" alt="" />
-                                    <h4 class="h5">Título da postagem</h4>
-                                    <time>10/08/2022</time>
-                                    <a class="btn btn-primary btn-sm">Leia mais</a>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 post">
-                                    <img src="https://via.placeholder.com/180x180" alt="" />
-                                    <h4 class="h5">Título da postagem</h4>
-                                    <time>10/08/2022</time>
-                                    <a class="btn btn-primary btn-sm">Leia mais</a>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 post">
-                                    <img src="https://via.placeholder.com/180x180" alt="" />
-                                    <h4 class="h5">Título da postagem</h4>
-                                    <time>10/08/2022</time>
-                                    <a class="btn btn-primary btn-sm">Leia mais</a>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 post">
-                                    <img src="https://via.placeholder.com/180x180" alt="" />
-                                    <h4 class="h5">Título da postagem</h4>
-                                    <time>10/08/2022</time>
-                                    <a class="btn btn-primary btn-sm">Leia mais</a>
-                                </div>
-                                <div class="col-lg-4 col-sm-6 post">
-                                    <img src="https://via.placeholder.com/180x180" alt="" />
-                                    <h4 class="h5">Título da postagem</h4>
-                                    <time>10/08/2022</time>
-                                    <a class="btn btn-primary btn-sm">Leia mais</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-            </div>
-        </section>
-    
-        <section id="card" style="height: 100%; margin-bottom: 16px;">
-    
-            <div class="container">
-                <h2>Cards</h2>
-                <div class="row">
-                    <div class="col-4">
-                        <article class="card">
-                            <header class="card-header">
-                                Desenvolvimento Web
-                            </header>
-                            <img src="https://via.placeholder.com/100x100" alt="" />
-                            <div class="card-body">
-                                <h4 class="card-title">Cards do Bootstrap</h4>
-                                <p class="card-text">
-                                    Conheça os Cards do Bootstrap e suas variações    
-                                </p>
-                                <a href="#" class="btn btn-primary">Leia mais</a>
-                            </div>
-                            <footer class="card-footer">
-                                Postado em <time>10/08/2022 às 19:00</time>
-                            </footer>
-                        </article>
-                    </div>
-                    <div class="col-4">
-                        <article class="card">
-                            <header class="card-header">
-                                Desenvolvimento Web
-                            </header>
-                            <img src="https://via.placeholder.com/100x100" alt="" />
-                            <div class="card-body">
-                                <h4 class="card-title">Cards do Bootstrap</h4>
-                                <p class="card-text">
-                                    Conheça os Cards do Bootstrap e suas variações    
-                                </p>
-                                <a href="#" class="btn btn-primary">Leia mais</a>
-                            </div>
-                            <footer class="card-footer">
-                                Postado em <time>10/08/2022 às 19:00</time>
-                            </footer>
-                        </article>
-                    </div>
-                    <div class="col-4">
-                        <article class="card">
-                            <header class="card-header">
-                                Desenvolvimento Web
-                            </header>
-                            <img src="https://via.placeholder.com/100x100" alt="" />
-                            <div class="card-body">
-                                <h4 class="card-title">Cards do Bootstrap</h4>
-                                <p class="card-text">
-                                    Conheça os Cards do Bootstrap e suas variações    
-                                </p>
-                                <a href="#" class="btn btn-primary">Leia mais</a>
-                            </div>
-                            <footer class="card-footer">
-                                Postado em <time>10/08/2022 às 19:00</time>
-                            </footer>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <section>
+        <div class="container">
+            <h2>Produtos</h2>
+            <ul class="products">
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180" />
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 </body>
-
 </html>
