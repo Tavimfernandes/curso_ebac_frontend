@@ -1,22 +1,7 @@
-const alunos = [];
-
-alunos.push ({
-    nome: "Lucio",
-    nota: 6
-})
-alunos.push ({
-    nome: "Ana",
-    nota: 2
-})
-alunos.push ({
-    nome: "Felipe",
-    nota: 9
-})
-
-function filtraAlunosAprovados(aluno) {
-    return aluno.nota >= 6
+"use strict";
+const multiplicacao = (numeroA, numeroB) => numeroA * numeroB;
+console.log(multiplicacao(10, 20));
+function saudacao(nome) {
+    return `Olá ${nome}!`;
 }
-
-const alunosAprovados = alunos.filter(filtraAlunosAprovados)
-
-console.log(alunosAprovados)
+console.log(saudacao('Octávio'));
